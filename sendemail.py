@@ -30,7 +30,7 @@ message.attach(part2)
 
 # create secure connection with server and send email
 context = ssl.create_default_context()
-server = smtplib.SMTP("mail.securelawfirm.com",587)
+server = smtplib.SMTP("SMTP_DOMAİN",PORT)
 server.starttls()
 server.ehlo_or_helo_if_needed()
 server.sendemail(
